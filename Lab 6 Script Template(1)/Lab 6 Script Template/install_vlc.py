@@ -78,7 +78,7 @@ def save_installer(installer_data):
     
     variable = os.path.join(folderos, "VLC installer.exe")
     folderos = os.getenv('TEMP')
-    with open (f'{folderos} "wb"') as file :
+    with open (folderos) as file :
         installer_data(folderos)
 
 
