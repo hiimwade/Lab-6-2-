@@ -75,18 +75,17 @@ def save_installer(installer_data):
     # TODO: Step 4
     # Hint: See example code in lab instructions entitled "Downloading a Binary File"
     
-    file_url = 'http://download.videolan.org/pub/videolan/vlc/3.0.17.4/win64/'
-    resp_msg = requests.get(file_url)
-    installer_data = resp_msg
-    folderos = os.getenv('temp')
-    with open (folderos , 'wb') as file:
+    
+    variable = os.path.join(folderos, "VLC installer.exe")
+    folderos = os.getenv('TEMP')
+    with open (f'{folderos} "wb"') as file :
         installer_data(folderos)
 
 
 
 
 
-    return
+    return variable
 
 def run_installer(installer_path):
     """Silently runs the VLC installer.
