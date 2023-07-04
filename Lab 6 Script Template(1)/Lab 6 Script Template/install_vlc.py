@@ -95,7 +95,7 @@ def run_installer(installer_path):
     """    
     # TODO: Step 5
     
-    installer_path = r'C:\temp\os.getenv', 'wb'
+    installer_path = r'C:\\temp\\os.getenv', 'wb'
     subprocess.run ([installer_path, '/L=1033', '/S'])
 
 
